@@ -1,0 +1,58 @@
+# BuildWiseAI Onboarding Email Automation - Cron Configuration
+#
+# This file contains example cron job configurations for running the
+# onboarding email sender at various intervals.
+#
+# To install, run: crontab -e
+# Then copy and paste the desired configuration below.
+
+# ============================================================================
+# RECOMMENDED: Run every hour at minute 0
+# ============================================================================
+0 * * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# ============================================================================
+# ALTERNATIVE SCHEDULES
+# ============================================================================
+
+# Run every 30 minutes
+# */30 * * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# Run every 15 minutes
+# */15 * * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# Run every 2 hours
+# 0 */2 * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# Run every day at 9 AM
+# 0 9 * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# Run every weekday at 8 AM, 12 PM, and 5 PM
+# 0 8,12,17 * * 1-5 /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# ============================================================================
+# ENVIRONMENT VARIABLES (if needed)
+# ============================================================================
+# You can set environment variables in crontab by adding them before the cron job:
+#
+# BUILDWISE_API_URL=https://your-app-url.com
+# BUILDWISE_AUTH_TOKEN=your_token_here
+# 0 * * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh >> /home/ubuntu/BuildWiseAi-app/cron.log 2>&1
+
+# ============================================================================
+# MONITORING AND ALERTS
+# ============================================================================
+# To receive email notifications on failures, ensure your system has mail configured
+# and use this format:
+#
+# MAILTO=your-email@example.com
+# 0 * * * * /home/ubuntu/BuildWiseAi-app/run_onboarding_emails.sh || echo "Onboarding email sender failed at $(date)" | mail -s "BuildWiseAI Alert" your-email@example.com
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# - Cron uses the system timezone. Check with: timedatectl
+# - Logs are appended to cron.log for troubleshooting
+# - The script includes lock file handling to prevent concurrent executions
+# - Use 'crontab -l' to list current cron jobs
+# - Use 'crontab -r' to remove all cron jobs (use with caution!)
