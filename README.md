@@ -1,2 +1,2 @@
 # BuildWiseAi-app
-Rork Build
+manus AI 
