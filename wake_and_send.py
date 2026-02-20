@@ -23,7 +23,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-BASE_URL = "https://3000-i15h83mk6ch6w41lvgs8n-f6f9bf8a.us2.manus.computer"
+BASE_URL = "https://buildwiseai.cloud"
 MAX_WAKE_ATTEMPTS = 10
 WAKE_DELAY = 10  # seconds between wake attempts
 

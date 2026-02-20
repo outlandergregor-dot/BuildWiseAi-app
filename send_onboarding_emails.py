@@ -203,7 +203,7 @@ def main():
     )
     parser.add_argument(
         '--url',
-        default=os.environ.get('BUILDWISE_API_URL', 'https://3000-i15h83mk6ch6w41lvgs8n-f6f9bf8a.us2.manus.computer'),
+        default=os.environ.get('BUILDWISE_API_URL', 'https://buildwiseai.cloud'),
         help='Base URL of the BuildWiseAI application'
     )
     parser.add_argument(
