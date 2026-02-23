@@ -538,3 +538,30 @@
 
 2026-02-19 17:03:15,511 - ERROR - Status Code: 502
 2026-02-19 17:03:15,511 - INFO - ================================================================================
+2026-02-23 05:05:22,960 - INFO - Starting onboarding email send process
+2026-02-23 05:05:22,960 - INFO - Target URL: https://buildwiseai.cloud
+2026-02-23 05:05:22,960 - INFO - Calling tRPC endpoint: https://buildwiseai.cloud/api/trpc/onboardingEmails.sendPendingEmails
+2026-02-23 05:05:24,262 - INFO - Successfully sent pending onboarding emails
+2026-02-23 05:05:24,263 - INFO - ================================================================================
+2026-02-23 05:05:24,263 - INFO - ONBOARDING EMAIL SEND RESULTS
+2026-02-23 05:05:24,263 - INFO - ================================================================================
+2026-02-23 05:05:24,263 - INFO - Timestamp: 2026-02-23T10:05:24.262955
+2026-02-23 05:05:24,263 - INFO - Success: True
+2026-02-23 05:05:24,263 - INFO - Emails Sent: 0
+2026-02-23 05:05:24,263 - INFO - ================================================================================
+
+================================================================================
+AUTOMATED RUN: 2026-02-23 05:05:24 UTC
+================================================================================
+Target URL: https://buildwiseai.cloud
+Endpoint: /api/trpc/onboardingEmails.sendPendingEmails
+HTTP Method: POST
+Attempt: 1/3
+HTTP Status: 200 OK
+Success: True
+Emails Sent: 0
+Emails Failed: 0
+Timestamp: 2026-02-23T10:05:27.950Z
+Full Response: {"result":{"data":{"json":{"success":true,"emailsSent":0,"emailsFailed":0,"timestamp":"2026-02-23T10:05:27.950Z"}}}}
+Notes: No pending onboarding emails in queue at this time. This is expected behavior when no new users have signed up since the last run.
+================================================================================
