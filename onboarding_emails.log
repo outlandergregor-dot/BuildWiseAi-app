@@ -1986,3 +1986,25 @@ Emails Sent: 0 (no pending emails in queue)
 Emails Failed: 0
 Status Code: 200
 ================================================================================
+2026-02-23 22:02:38,462 - INFO - ================================================================================
+2026-02-23 22:02:38,462 - INFO - BUILDWISEAI ONBOARDING EMAIL AUTOMATION - RUN STARTED
+2026-02-23 22:02:38,462 - INFO - ================================================================================
+2026-02-23 22:02:38,462 - INFO - Run initiated at: 2026-02-24T03:02:38.462868
+2026-02-23 22:02:38,462 - INFO - Target URL: https://buildwiseai.cloud
+2026-02-23 22:02:38,463 - INFO - Endpoint: https://buildwiseai.cloud/api/trpc/onboardingEmails.sendPendingEmails
+2026-02-23 22:02:38,463 - INFO - Calling tRPC mutation: onboardingEmails.sendPendingEmails
+2026-02-23 22:02:38,463 - INFO - --------------------------------------------------------------------------------
+2026-02-23 22:02:38,463 - INFO - EXECUTION RESULTS
+2026-02-23 22:02:38,463 - INFO - --------------------------------------------------------------------------------
+2026-02-23 22:02:38,463 - INFO - HTTP Status Code : 200
+2026-02-23 22:02:38,463 - INFO - Success          : True
+2026-02-23 22:02:38,463 - INFO - Emails Sent      : 0
+2026-02-23 22:02:38,463 - INFO - Emails Failed    : 0
+2026-02-23 22:02:38,463 - INFO - API Timestamp    : 2026-02-24T03:02:26.743Z
+2026-02-23 22:02:38,463 - INFO - Attempts Used    : 1/3
+2026-02-23 22:02:38,463 - INFO - --------------------------------------------------------------------------------
+2026-02-23 22:02:38,463 - INFO - SUMMARY: API call completed successfully. No pending emails in queue at this time.
+2026-02-23 22:02:38,463 - INFO - NOTE: 0 emails sent is normal — indicates no users are currently awaiting onboarding emails.
+2026-02-23 22:02:38,463 - INFO - ================================================================================
+2026-02-23 22:02:38,463 - INFO - Run completed at: 2026-02-24T03:02:38.463745
+2026-02-23 22:02:38,463 - INFO - ================================================================================
